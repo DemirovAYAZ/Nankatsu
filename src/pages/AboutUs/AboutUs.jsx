@@ -5,25 +5,25 @@ const AboutUs = () => {
     const teamMembers = [
         {
             role: "Founder/President",
-            name: "Bob Brown",
+            name: "Ilkin Abdullayev",
             description:
                 "Glavi amet ritnisi libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum",
         },
         {
             role: "Vice President",
-            name: "John Grant",
+            name: "Aziz Azizli",
             description:
                 "Glavi amet ritnisi libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum",
         },
         {
             role: "Creative Leader",
-            name: "Irma Maxwell",
+            name: "Qurban Haciyev",
             description:
                 "Glavi amet ritnisi libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum",
         },
         {
             role: "Secretary",
-            name: "Ann Richmond",
+            name: "Ayaz Damirov",
             description:
                 "Glavi amet ritnisi libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum",
         },
