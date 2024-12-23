@@ -14,6 +14,12 @@ const Sidebar = () => {
             <p>Main</p>
           </div>
         </Link>
+        <Link className={styles.link} to="/dashboard/your-incomes">
+          <div>
+            <img src="/assets/maindashboardicon.svg" alt="icon" />
+            <p>Incomes</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
