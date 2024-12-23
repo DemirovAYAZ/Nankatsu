@@ -29,12 +29,12 @@ function AppContent() {
           <Route path="/about-us" element={<AboutUs />}/>
           <Route path="/dashboard/main" element={<Dashboard />} />
 
-          <Route path="/dashboard/your-incomes" element={<DashboardIncome/>} />
+          <Route path="/dashboard/your-sales" element={<DashboardIncome/>} />
 
           <Route path="/dashboard/price" element={<PriceDashboard />} />
           <Route path="/dashboard/quantity" element={<QuantityDashboard />} />
           <Route path="/dashboard/total_sales" element={<TotalSalesDashboard />} />
-          <Route path="/dashboard/customer_type" element={<CustomerTypeDashboard/>} />
+          <Route path="/dashboard/customer-type" element={<CustomerTypeDashboard/>} />
 
         </Routes>
       </Wraper>

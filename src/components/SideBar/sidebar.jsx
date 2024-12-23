@@ -14,10 +14,10 @@ const Sidebar = () => {
             <p>Main</p>
           </div>
         </Link>
-        <Link className={styles.link} to="/dashboard/price">
+        <Link className={styles.link} to="/dashboard/your-sales">
           <div>
-            <img src="/assets/maindashboardicon.svg" alt="price" />
-            <p>Price</p>
+            <img src="/assets/maindashboardicon.svg" alt="icon" />
+            <p>Total-Sales</p>
           </div>
         </Link>
         <Link className={styles.link} to="/dashboard/quantity">
@@ -32,7 +32,7 @@ const Sidebar = () => {
             <p>Total Sales</p>
           </div>
         </Link>
-        <Link className={styles.link} to="/dashboard/customer_type">
+        <Link className={styles.link} to="/dashboard/customer-type">
           <div>
             <img src="/assets/maindashboardicon.svg" alt="price" />
             <p>Customer Type</p>
