@@ -77,7 +77,7 @@ const BarGraph = () => {
     
        
   return (
-      <div style={{width:"50%"}}>
+      <div >
           <Bar options={options} data={chartData}/>
     </div>
   )

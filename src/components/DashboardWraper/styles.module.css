@@ -1,0 +1,7 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  .wrapper_sidebar {
+    width: 100%;
+  }
+}

@@ -13,7 +13,7 @@ const Navbar = () => {
                     <Link to={'/'} className={styles.link}>
                        <span>Home</span> 
                     </Link>
-                    <Link to={'/dashboard'} className={styles.link}>
+                    <Link to={'/dashboard/main'} className={styles.link}>
                        <span> Dashboard</span> 
                     </Link>
                     <Link to={'/costs'} className={styles.link}>
