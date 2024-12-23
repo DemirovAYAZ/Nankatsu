@@ -7,6 +7,7 @@ import PriceDashboard from "./pages/PriceDashboard/PriceDashboard";
 import QuantityDashboard from "./pages/QuantityDashboard/QuantityDashboard";
 import TotalSalesDashboard from "./pages/TotalSalesDashboard/TotalSalesDashboard";
 import CustomerTypeDashboard from "./pages/CustomerTypeDashboard/CustomerTypeDashboard";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function AppContent() {
       <Wraper>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />}/>
           <Route path="/dashboard/main" element={<Dashboard />} />
           <Route path="/dashboard/price" element={<PriceDashboard />} />
           <Route path="/dashboard/quantity" element={<QuantityDashboard />} />
