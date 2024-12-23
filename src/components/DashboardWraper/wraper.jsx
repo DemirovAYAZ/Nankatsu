@@ -7,7 +7,7 @@ const Wraper = ({ children }) => {
 
   return (
     <main className={`${styles.wrapper} container`}>
-      {pathname !== "/" ? (
+      {pathname.startsWith("/dashboard/") ? (
         <div className={styles.wrapper_sidebar}>
           <Sidebar />
         </div>
