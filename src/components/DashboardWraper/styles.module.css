@@ -2,6 +2,6 @@
   display: flex;
   width: 100%;
   .wrapper_sidebar {
-    width: 100%;
+    width: 25%;
   }
 }
