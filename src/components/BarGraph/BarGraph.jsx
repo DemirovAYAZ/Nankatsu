@@ -57,22 +57,22 @@ const options = {
 const BarGraph = () => {
     ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
     
-    const [chartData, setChartData] = useState({labels:[],datasets:[]});
+    // const [chartData, setChartData] = useState({labels:[],datasets:[]});
 
 
-    async function getData() {
-        const resData = await fetchData('http://10.121.128.76:8000/data', "GET");
-        // console.log(resData.data);
-        if (resData.status === 200) { 
-            setChartData(resData?.data);
-        }
-        return
-    }
+    // async function getData() {
+    //     const resData = await fetchData('http://10.121.128.76:8000/data', "GET");
+    //     // console.log(resData.data);
+    //     if (resData.status === 200) { 
+    //         setChartData(resData?.data);
+    //     }
+    //     return
+    // }
 
 
-    useEffect(() => {
-        getData();
-    },[])
+    // useEffect(() => {
+    //     getData();
+    // },[])
 
     
        

@@ -14,7 +14,7 @@ const Wraper = ({ children }) => {
       ) : (
         ""
       )}
-      <div >{children}</div>
+      <div style={{width:'100%',height:'100vh'}}>{children}</div>
     </main>
   );
 };

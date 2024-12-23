@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  gap: 24px;
   width: 100%;
   .wrapper_sidebar {
     width: 25%;
