@@ -1,0 +1,46 @@
+.home_message{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.video video{
+    width: 500px;
+}
+
+.message{
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.message_div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.button{
+    width: 150px;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: #008a00;
+    border: 1px solid #008a00;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.button:hover{
+    color: #008a00;
+    background-color: #fff;
+}
