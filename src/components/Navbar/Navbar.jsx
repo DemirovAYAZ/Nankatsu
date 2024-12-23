@@ -6,21 +6,21 @@ const Navbar = () => {
     return (
         <div className='container'>
             <div className={styles.navbar_container}>
-                <div className='logo'>
-                    Nankatsu
+                <div className={styles.logo}>
+                    <span>DataPilot</span>
                 </div>
                 <div className={styles.navbar_links}>
                     <Link to={'/'} className={styles.link}>
-                        Home
+                       <span>Home</span> 
                     </Link>
                     <Link to={'/dashboard'} className={styles.link}>
-                        Dashboard
+                       <span> Dashboard</span> 
                     </Link>
                     <Link to={'/costs'} className={styles.link}>
-                        Costs
+                        <span>Costs</span> 
                     </Link>
                     <Link to={'/about-us'} className={styles.link}>
-                        About us
+                       <span> About us</span> 
                     </Link>
                 </div>
             </div>

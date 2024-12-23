@@ -13,8 +13,8 @@
 }
 
 .message{
-    font-size: 25px;
-    width: 400px;
+    font-size: 23px;
+    width: 600px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -28,19 +28,20 @@
 }
 
 .button{
+    margin-top: 10px;
     width: 150px;
     padding: 10px;
-    font-size: 40px;
+    font-size: 24px;
     border-radius: 20px;
-    background-color: #008a00;
-    border: 1px solid #008a00;
+    background-color: rgb(34,194,87);
+    border: 1px solid rgb(34,194,87);
     color: #fff;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.5s;
 
 }
 
 .button:hover{
-    color: #008a00;
+    color:rgb(34,194,87);
     background-color: #fff;
 }
