@@ -30,17 +30,19 @@ const AboutUs = () => {
     ];
 
     return (
-        <div className={styles.teamContainer}>
-            <h1 className={styles.title}>Meet our team</h1>
-            <div className={styles.grid}>
-                {teamMembers.map((member, index) => (
-                    <div key={index} className={styles.card}>
-                        <div className={styles.avatar}></div>
-                        <h3 className={styles.role}>{member.role}</h3>
-                        <h2 className={styles.name}>{member.name}</h2>
-                        <p className={styles.description}>{member.description}</p>
-                    </div>
-                ))}
+        <div className="container">
+            <div className={styles.about_us}>
+                <h1 className={styles.title}>Meet our team</h1>
+                <div className={styles.grid}>
+                    {teamMembers.map((member, index) => (
+                        <div key={index} className={styles.card}>
+                            <div className={styles.avatar}></div>
+                            <h3 className={styles.role}>{member.role}</h3>
+                            <h2 className={styles.name}>{member.name}</h2>
+                            <p className={styles.description}>{member.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
