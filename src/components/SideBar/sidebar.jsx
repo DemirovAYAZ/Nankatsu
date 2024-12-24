@@ -17,19 +17,13 @@ const Sidebar = () => {
         <Link className={styles.link} to="/dashboard/your-sales">
           <div>
             <img src="/assets/maindashboardicon.svg" alt="icon" />
-            <p>Total-Sales</p>
+            <p>Total Sales</p>
           </div>
         </Link>
         <Link className={styles.link} to="/dashboard/quantity">
           <div>
             <img src="/assets/maindashboardicon.svg" alt="price" />
             <p>Quantity</p>
-          </div>
-        </Link>
-        <Link className={styles.link} to="/dashboard/total_sales">
-          <div>
-            <img src="/assets/maindashboardicon.svg" alt="price" />
-            <p>Total Sales</p>
           </div>
         </Link>
         <Link className={styles.link} to="/dashboard/customer-type">

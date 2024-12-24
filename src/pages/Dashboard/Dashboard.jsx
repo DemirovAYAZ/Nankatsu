@@ -6,26 +6,6 @@ const Dashboard = () => {
     inputRef.current.click();
   }
 
-  // const [jsonData, setJsonData] = useState([]);
-
-  // const handleFileUpload = (event) => {
-  //   const file = event.target.files[0];
-  //   if (file) {
-  //     Papa.parse(file, {
-  //       header: true, // Treat the first row as headers
-  //       skipEmptyLines: true, // Ignore empty lines
-  //       complete: (result) => {
-  //         setJsonData(result.data); // JSON data
-  //         console.log("Converted JSON:", result.data);
-  //       },
-  //       error: (error) => {
-  //         console.error("Error parsing CSV:", error);
-  //       },
-  //     });
-  //   }
-  // };
-  
-
   return (
     <>
       <div className={styles.dashboard_page}>

@@ -10,7 +10,7 @@ const months = [
 ];
 const DashboardIncome = () => {
   const [data, setData] = useState({
-    labels: months,
+    labels: "",
     datasets: []
   });
   // const data = incomesData[0];
