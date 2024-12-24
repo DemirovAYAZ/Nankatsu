@@ -1,11 +1,12 @@
-import React, { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Dashboard = () => {
   const inputRef = useRef(null);
+  const { pathname } = useLocation();
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const [fileName, setFileName] = useState("");
@@ -16,34 +17,41 @@ const Dashboard = () => {
 
   const handleFileChange = () => {
     if (inputRef.current.files.length) {
-      setFileName(inputRef.current.files[0].name); // Update file name state
+      setFileName(inputRef.current.files[0].name);
     }
   };
 
   const handleSubmit = () => {
     if (!inputRef.current.files.length) {
-      alert("Please select a file before submitting!");
+      toast.error("Please select a file before submitting!");
       return;
     }
 
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-      toast.success('File uploaded successfully!');
+      toast.success("File uploaded successfully!");
       navigate("/dashboard/your-sales");
+      localStorage.setItem("isVisible", JSON.stringify(true));
     }, 2000);
   };
+
+  useEffect(() => {
+    if (pathname === "/dashboard/main") {
+      localStorage.setItem("isVisible", JSON.stringify(false));
+    }
+  }, [pathname]);
 
   return (
     <div className={styles.dashboard_page}>
       <div className={styles.dashboard_page_input}>
         <label htmlFor="file">Upload your file</label>
-        <input 
-          ref={inputRef} 
-          style={{ display: "none" }} 
-          type="file" 
-          id="file" 
-          onChange={handleFileChange} 
+        <input
+          ref={inputRef}
+          style={{ display: "none" }}
+          type="file"
+          id="file"
+          onChange={handleFileChange}
         />
         <div className={styles.upload} onClick={triggerInput}>
           Upload
@@ -55,6 +63,7 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

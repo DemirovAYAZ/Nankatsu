@@ -56,6 +56,8 @@ const DashboardIncome = () => {
     <div className={styles.income_page}>
       <div >
         <div className={styles.graph_border}>
+          <h2 style={{ marginLeft: '0px', fontSize:'30px'}}>Monthly Sales Trends</h2>
+          
       <BarGraph options={options} data={data} />
         </div>
       </div>

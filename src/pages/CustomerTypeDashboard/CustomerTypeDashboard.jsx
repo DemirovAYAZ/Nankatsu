@@ -77,6 +77,8 @@ const CustomerTypeDashboard = () => {
     <div className={styles.income_page}>
       <div >
                 <div className={styles.graph_border}>
+                  <h2 style={{ marginLeft: '0px', fontSize:'30px'}}>Members</h2>
+                  
                       <BarGraph options={options} data={barData} />
                       </div>
       </div>
