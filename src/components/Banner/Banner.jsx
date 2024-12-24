@@ -16,7 +16,7 @@ const Banner = () => {
             </div>
             <div className={styles.content}>
                 <h1 className={styles.title}>
-                    WHAT ARE THE DIFFERENCES OF <i>TURBOARD</i>
+                    Guiding entrepreneurs in managing their data.
                 </h1>
                 <button className={styles.learnMoreButton}>LEARN MORE</button>
             </div>
