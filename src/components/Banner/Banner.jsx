@@ -16,9 +16,9 @@ const Banner = () => {
             </div>
             <div className={styles.content}>
                 <h1 className={styles.title}>
-                    WHAT ARE THE DIFFERENCES OF <i>TURBOARD</i>
+              What are the differences of  <i>DataPlot</i>
                 </h1>
-                <button className={styles.learnMoreButton}>LEARN MORE</button>
+                <button className={styles.learnMoreButton}>Learn More</button>
             </div>
         </div>
     );
