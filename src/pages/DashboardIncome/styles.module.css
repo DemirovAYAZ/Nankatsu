@@ -1,7 +1,7 @@
 .income_page{
     &:first-child{
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 15px;
         width: 85%;
     }
 }

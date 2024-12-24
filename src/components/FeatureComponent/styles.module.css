@@ -20,11 +20,17 @@
 .textSection {
     flex: 2;
     padding: 10px;
-    text-align: end;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .textSection h2 {
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
@@ -34,7 +40,9 @@
 }
 
 .textSection p {
-    font-size: 16px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -55,14 +63,6 @@
     color: #fff;
 }
 
-.navigationButtons {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
 
 .navButton {
     background-color: #fff;

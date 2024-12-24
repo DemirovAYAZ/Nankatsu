@@ -6,23 +6,17 @@ const FeatureComponent = () => {
 
     const features = [
         {
-            title: "Extended Slicing & Filtering Capabilities",
+            title: "AI Analysis",
             description:
-                "Slice and dice your data without a need for a preprocess, turn almost all dashlets to slicer. If there is no field in the database, create your filters using SQL.",
-            videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                "The AI analyzes the layout, identifying furniture and suggesting how to rearrange or refurbish it for a more functional and aesthetic look.",
+            videoUrl: "https://www.youtube.com/embed/upf90y062SI?si=AF9etKF7INAHjwiu",
         },
         {
-            title: "Real-Time Dashboards",
+            title: "Future Growth and Vision",
             description:
-                "Create dynamic, real-time dashboards with easy-to-use widgets and visualization tools to get insights instantly.",
-            videoUrl: "https://www.youtube.com/embed/ScMzIvxBSi4",
-        },
-        {
-            title: "Customizable Reports",
-            description:
-                "Generate and customize reports to suit your specific needs, ensuring accurate data representation.",
-            videoUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        },
+                "Our long-term vision is to become the go-to platform for sustainable interior design worldwide.",
+            videoUrl: "https://www.youtube.com/embed/fnIl212tBPk?si=E8nEHW6t8INOkP6G",
+        }
     ];
 
     const handleNext = () => {
@@ -42,20 +36,23 @@ const FeatureComponent = () => {
             </div>
             <div className={styles.container}>
                 <div className={styles.textSection}>
-                    <h2>FEATURES OF TURBOARD</h2>
+                <button className={styles.navButton} onClick={handlePrev}>
+                        &lt;
+                    </button>
+                    <div className={styles.main}>
+
+                    <h2>Features of DataPlot</h2>
                     <h3>{features[currentIndex].title}</h3>
                     <p>{features[currentIndex].description}</p>
                     <button className={styles.learnButton}>LEARN HOW</button>
-                </div>
+                    </div>
 
-                <div className={styles.navigationButtons}>
-                    <button className={styles.navButton} onClick={handlePrev}>
-                        &lt;
-                    </button>
                     <button className={styles.navButton} onClick={handleNext}>
                         &gt;
                     </button>
                 </div>
+
+             
 
                 <div className={styles.mediaSection}>
                     <iframe
