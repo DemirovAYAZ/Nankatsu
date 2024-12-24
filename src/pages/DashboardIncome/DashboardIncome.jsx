@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react';
 import BarGraph from '../../components/BarGraph/BarGraph';
 import styles from './styles.module.css';
 
-import { incomesData } from '../../mockdata';
+import { incomesData, Tranzaction } from '../../mockdata';
 const months = [
   "January", "February", "March", "April", "May", 
   "June", "July", "August", "September", "October", 
   "November", "December"
 ];
 const DashboardIncome = () => {
-const [data,setData]=useState({})
+  const [data, setData] = useState({
+    labels: months,
+    datasets: []
+  });
   // const data = incomesData[0];
 
   function transformDataToChart(transactions) {
@@ -40,7 +43,7 @@ const [data,setData]=useState({})
   }
   
   useEffect(() => {
-    const transaction = transactions
+    const transaction = Tranzaction
     const chartData = transformDataToChart(transaction);
   setData(chartData)
 },[])
