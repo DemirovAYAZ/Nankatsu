@@ -76,7 +76,9 @@ const CustomerTypeDashboard = () => {
   return (
     <div className={styles.income_page}>
       <div >
-      <BarGraph options={options} data={barData} />
+                <div className={styles.graph_border}>
+                      <BarGraph options={options} data={barData} />
+                      </div>
       </div>
       <div>
         

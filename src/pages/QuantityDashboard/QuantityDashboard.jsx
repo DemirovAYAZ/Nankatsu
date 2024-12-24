@@ -11,7 +11,6 @@ const QuantityDashboard = () => {
     const mapCategoriesForPieChart = (transactions) => {
       const categorySales = {};
     
-      // Aggregate total sales by category
       transactions.forEach((transaction) => {
         const category = transaction.Product_category;
         const sales = transaction.Total_Sales;
@@ -23,7 +22,6 @@ const QuantityDashboard = () => {
         }
       });
     
-      // Convert aggregated data into labels and dataset for the chart
       const labels = Object.keys(categorySales);
       const data = Object.values(categorySales);
     
@@ -53,7 +51,6 @@ const QuantityDashboard = () => {
       };
     };
     
-    // Prepare options for the pie chart
     const options = {
       responsive: true,
       plugins: {
@@ -62,7 +59,6 @@ const QuantityDashboard = () => {
         },
         tooltip: {
           callbacks: {
-            // Add percentage to the tooltip
             label: (tooltipItem) => {
               const dataset = tooltipItem.dataset;
               const total = dataset.data.reduce((sum, value) => sum + value, 0);
@@ -94,7 +90,10 @@ const QuantityDashboard = () => {
   return (
         <div className={styles.income_page}>
         <div >
+          <div className={styles.graph_border}>
+<p style={{fontSize:"30px",fontWeight:'600',padding:"20px 0px"}}>Quantity of Top Products</p>
         <PieChart options={options} data={data}/>
+          </div>
 
         </div>
         <div>

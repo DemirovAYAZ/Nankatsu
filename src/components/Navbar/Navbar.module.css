@@ -4,9 +4,9 @@
     width: 100%;
     justify-content: space-between;
     margin: auto;
-    padding-top: 30px;
     color: green;
     margin-bottom: 25px;
+    padding: 30px 10px 0px;
 }
 .logo {
     span {

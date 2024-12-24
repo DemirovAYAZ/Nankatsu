@@ -1,7 +1,76 @@
-.income_page{
-    &:first-child{
-        margin: 0 auto;
-        margin-top: 30px;
-        width: 85%;
+.income_page {
+    padding-right: 10px;
+    &:first-child {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
     }
+}
+
+.select {
+    border-radius: 5px;
+    height: 40px !important;
+    font-size: 1em;
+    padding: 0px 7px;
+    width: 100%;
+}
+
+.loader {
+    font-size: 18px;
+    text-align: center;
+    color: #007D57;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.strategyDetails{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 30px;
+    font-size: 1em;
+}
+
+.strategyDetails p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.strategyDetails p hr{
+    height: 2px;
+    background-color: black;
+    border: 0px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.strategyDetails p strong{
+    font-size: 1.5em;
+}
+
+.graph{
+    width: 80%;
+}
+
+.graph_border{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.strategyDetails p{ 
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+.strategyDetails strong{
+    color: rgb(69, 69, 69);
 }

@@ -7,7 +7,7 @@ import FeatureComponent from '../../components/FeatureComponent/FeatureComponent
 
 const Home = () => {
   return (
-    <div>
+    <div className='container_home'>
       <HomeEnter />
       <Banner/>
       <ManageAccounts />

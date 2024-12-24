@@ -55,7 +55,9 @@ const DashboardIncome = () => {
   return (
     <div className={styles.income_page}>
       <div >
+        <div className={styles.graph_border}>
       <BarGraph options={options} data={data} />
+        </div>
       </div>
       <div>
         
