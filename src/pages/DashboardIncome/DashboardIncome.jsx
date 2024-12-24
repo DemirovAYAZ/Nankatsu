@@ -36,7 +36,7 @@ const DashboardIncome = () => {
           label: 'Sales',
           data: salesData,
           borderColor: "#007D57", 
-          backgroundColor: "#CF3A4B",
+          backgroundColor: "#21a917",
           fill: true,
           borderWidth: 2,
         },
