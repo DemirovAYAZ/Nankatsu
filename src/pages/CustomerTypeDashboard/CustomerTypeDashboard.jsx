@@ -11,7 +11,7 @@ const options = {
         generateLabels: function (chart) {
           return chart.data.labels.map((label, index) => ({
             text: label,
-            fillStyle: chart.data.datasets[0].backgroundColor[index], // Use dataset colors as background
+            fillStyle: chart.data.datasets[0].backgroundColor[index], 
            
            
           }));
