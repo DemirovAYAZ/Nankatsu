@@ -16,9 +16,6 @@ const Navbar = () => {
                     <Link to={'/dashboard/main'} className={styles.link}>
                        <span> Dashboard</span> 
                     </Link>
-                    <Link to={'/costs'} className={styles.link}>
-                        <span>Costs</span> 
-                    </Link>
                     <Link to={'/about-us'} className={styles.link}>
                        <span> About us</span> 
                     </Link>

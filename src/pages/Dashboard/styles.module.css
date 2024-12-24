@@ -5,16 +5,20 @@
   align-items: center;
   width: 100%;
   padding-top: 50px;
+  flex-direction: column;
+
   .dashboard_page_input {
     width: 75%;
     border-radius: 8px;
-    padding: 24px ;
+    padding: 24px;
     background-color: #51b998;
+
     label {
       color: white;
       font-size: 16px;
       font-weight: 500;
     }
+
     .upload {
       margin-top: 16px;
       background-color: #fff;
@@ -25,18 +29,47 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
-    .button_div{
+
+    .button_div {
       display: flex;
       justify-content: end;
     }
-    button{
-      background-color:#0083B0 ;
-      color:white;
-      border:none;
+
+    button {
+      background-color: #0083B0;
+      color: white;
+      border: none;
       padding: 8px 16px;
       border-radius: 4px;
       margin-top: 14px;
+      cursor: pointer;
     }
   }
+}
+
+.loading {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #007bff;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.fileName {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.toast-success {
+  background-color: #28a745;
+  color: white;
 }

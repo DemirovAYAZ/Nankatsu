@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Wraper from "./components/DashboardWraper/wraper";
+import { ToastContainer } from "react-toastify";
 
 import DashboardIncome from "./pages/DashboardIncome/DashboardIncome";
 import PriceDashboard from "./pages/PriceDashboard/PriceDashboard";
@@ -22,11 +23,12 @@ function App() {
 }
 
 function AppContent() {
-  const location = useLocation(); 
-  const isDashboardPath = location.pathname.startsWith("/dashboard"); 
+  const location = useLocation();
+  const isDashboardPath = location.pathname.startsWith("/dashboard");
 
   return (
     <>
+      <ToastContainer />
       <Navbar />
       <Wraper>
         <Routes>
@@ -38,7 +40,7 @@ function AppContent() {
           <Route path="/dashboard/quantity" element={<QuantityDashboard />} />
           <Route path="/dashboard/total_sales" element={<TotalSalesDashboard />} />
           <Route path="/dashboard/customer-type" element={<CustomerTypeDashboard />} />
-          <Route path="/dashboard/customer-strategy" element={<StrategyDashboard/>}/>
+          <Route path="/dashboard/customer-strategy" element={<StrategyDashboard />} />
         </Routes>
       </Wraper>
       {!isDashboardPath && <Footer />}
