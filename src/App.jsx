@@ -11,6 +11,7 @@ import TotalSalesDashboard from "./pages/TotalSalesDashboard/TotalSalesDashboard
 import CustomerTypeDashboard from "./pages/CustomerTypeDashboard/CustomerTypeDashboard";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Footer from "./components/Footer/Footer";
+import StrategyDashboard from "./pages/StrategyDashboard/StrategyDashboard";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function AppContent() {
           <Route path="/dashboard/quantity" element={<QuantityDashboard />} />
           <Route path="/dashboard/total_sales" element={<TotalSalesDashboard />} />
           <Route path="/dashboard/customer-type" element={<CustomerTypeDashboard />} />
+          <Route path="/dashboard/customer-strategy" element={<StrategyDashboard/>}/>
         </Routes>
       </Wraper>
       {!isDashboardPath && <Footer />}

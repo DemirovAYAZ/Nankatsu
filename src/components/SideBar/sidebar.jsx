@@ -32,6 +32,12 @@ const Sidebar = () => {
             <p>Customer Type</p>
           </div>
         </Link>
+        <Link className={styles.link} to="/dashboard/customer-strategy">
+          <div>
+            <img src="/assets/maindashboardicon.svg" alt="price" />
+            <p>Future Marketing Strategy</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
