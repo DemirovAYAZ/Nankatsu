@@ -36,24 +36,20 @@ const FeatureComponent = () => {
             </div>
             <div className={styles.container}>
                 <div className={styles.textSection}>
-                <button className={styles.navButton} onClick={handlePrev}>
+                    <button className={styles.navButton} onClick={handlePrev}>
                         &lt;
                     </button>
                     <div className={styles.main}>
-
-                    <h2>Features of DataPlot</h2>
-                    <h3>{features[currentIndex].title}</h3>
-                    <p>{features[currentIndex].description}</p>
-                    <button className={styles.learnButton}>LEARN HOW</button>
+                        <h2>Features of DataPlot</h2>
+                        <h3>{features[currentIndex].title}</h3>
+                        <p>{features[currentIndex].description}</p>
+                        <button className={styles.learnButton}>LEARN HOW</button>
                     </div>
 
                     <button className={styles.navButton} onClick={handleNext}>
                         &gt;
                     </button>
                 </div>
-
-             
-
                 <div className={styles.mediaSection}>
                     <iframe
                         className={styles.videoFrame}

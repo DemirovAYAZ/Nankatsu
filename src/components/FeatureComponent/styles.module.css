@@ -28,6 +28,11 @@
     justify-content: center;
 }
 
+.main{
+    width: 450px;
+    padding: 0px 20px;
+}
+
 .textSection h2 {
     font-size: 26px;
     font-weight: 600;
