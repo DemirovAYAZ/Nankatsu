@@ -19,10 +19,6 @@ margin-bottom: 10px;
     border-bottom-color:#666 ;
 }
 
-.section:last-child {
-    border-bottom: none;
-}
-
 .header {
     
     display: flex;
