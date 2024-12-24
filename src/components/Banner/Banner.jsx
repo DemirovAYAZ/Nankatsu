@@ -18,7 +18,7 @@ const Banner = () => {
                 <h1 className={styles.title}>
                     Guiding entrepreneurs in managing their data.
                 </h1>
-                <button className={styles.learnMoreButton}>LEARN MORE</button>
+                <button className={styles.learnMoreButton}>Learn More</button>
             </div>
         </div>
     );

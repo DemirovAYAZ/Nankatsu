@@ -1,10 +1,49 @@
-import React from 'react'
-import BarGraph from '../../components/BarGraph/BarGraph'
-import styles from './styles.module.css'
-import { incomesData } from '../../mockdata';
-const DashboardIncome = () => {
+import React, { useEffect, useState } from 'react';
+import BarGraph from '../../components/BarGraph/BarGraph';
+import styles from './styles.module.css';
 
-  const data = incomesData[0];
+import { incomesData } from '../../mockdata';
+const months = [
+  "January", "February", "March", "April", "May", 
+  "June", "July", "August", "September", "October", 
+  "November", "December"
+];
+const DashboardIncome = () => {
+const [data,setData]=useState({})
+  // const data = incomesData[0];
+
+  function transformDataToChart(transactions) {
+  
+    // Initialize an array to store sales for each month
+    const salesData = new Array(12).fill(0);
+  
+    // Aggregate sales by month
+    transactions.forEach((transaction) => {
+      const date = new Date(transaction.Date);
+      const monthIndex = date.getMonth(); // Month index (0-11)
+      salesData[monthIndex] += transaction.Total_Sales;
+    });
+  
+    // Return the transformed chart data
+    return {
+      labels: months,
+      datasets: [
+        {
+          id: 1,
+          label: 'Sales',
+          data: salesData,
+          borderColor: "rgba(0,0,0)",
+          backgroundColor: '#F14A55',
+        },
+      ],
+    };
+  }
+  
+  useEffect(() => {
+    const transaction = transactions
+    const chartData = transformDataToChart(transaction);
+  setData(chartData)
+},[])
   const options = {
     responsive:true
   }

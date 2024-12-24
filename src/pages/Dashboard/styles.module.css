@@ -6,15 +6,16 @@
   width: 100%;
   padding-top: 50px;
   .dashboard_page_input {
-    width: 50%;
-    padding: 24px;
+    width: 75%;
+    border-radius: 8px;
+    padding: 24px ;
     background-color: #51b998;
     label {
       color: white;
       font-size: 16px;
       font-weight: 500;
     }
-    div {
+    .upload {
       margin-top: 16px;
       background-color: #fff;
       width: 100%;
@@ -24,6 +25,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .button_div{
+      display: flex;
+      justify-content: end;
+    }
+    button{
+      background-color:#0083B0 ;
+      color:white;
+      border:none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      margin-top: 14px;
     }
   }
 }

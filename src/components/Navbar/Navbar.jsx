@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className='container'>
             <div className={styles.navbar_container}>
                 <div className={styles.logo}>
-                    <span>DataPilot</span>
+                    <span>DataPlot</span>
                 </div>
                 <div className={styles.navbar_links}>
                     <Link to={'/'} className={styles.link}>
